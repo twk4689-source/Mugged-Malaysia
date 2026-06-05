@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://muggednick.shop/sitemap.xml
+Sitemap: https://mugged-malaysia.netlify.app/sitemap.xml
 
 # Disallow admin areas
 Disallow: /admin/
