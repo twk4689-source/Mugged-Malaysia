@@ -1,29 +1,27 @@
 # 📱 mugged_nick — Today's Social Post
-**2026-06-05 Friday**
+**2026-06-06 Saturday**
 
 ## 🎯 Theme
-Flashback Friday — best selling colours this month 🌈
+Weekend Carry — what's in your bag? 🎒
 
 ## 📹 Format
 REEL
 
 ## 🏷️ Product
-MONTIGO Disney Pooh Cup #Disney #WinnieThePooh
+STTOKE 12oz Bondi Blue #BondiBlue #STTOKE
 
 ## 🔥 Hook / Script
-Tag someone who needs to upgrade their water bottle game 💧
+Durable? Dropped mine 3 times. Still perfect. 😤
 
 ## 📝 Caption
-Your daily hydration just got an upgrade 💧✨
+The cup everyone's talking about ☕🔥
 
-MONTIGO Disney Pooh Cup — available now at mugged_nick
+STTOKE 12oz Bondi Blue — Shop: shopee.com.my/mugged_nick
 
-Shop: Shopee: https://shopee.com.my/mugged_nick / Lazada: https://www.lazada.com.my/shop/mugged
-
-#reusablebottle #malaysiaseller #plasticfree #bpanfree
+#sttokemy #montigomy #reusablecups
 
 ## 🏷️ Hashtags
-#STTOKEMalaysia #MontigoMY #reusabletumbler #insulatedcup #ecogift #corporategiftmalaysia #petalingjaya
+#STTOKE #MONTIGO #reusablecup #ecofriendly #zerowaste #shopeeMY #malaysiaseller
 
 ## 🔗 Links
 - Shopee: https://shopee.com.my/mugged_nick
