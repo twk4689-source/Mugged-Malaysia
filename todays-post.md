@@ -1,27 +1,27 @@
 # 📱 mugged_nick — Today's Social Post
-**2026-06-06 Saturday**
+**2026-06-07 Sunday**
 
 ## 🎯 Theme
-Weekend Carry — what's in your bag? 🎒
+Sunday Reset — prep your week with style ✨
 
 ## 📹 Format
-REEL
+CAROUSEL
 
 ## 🏷️ Product
-STTOKE 12oz Bondi Blue #BondiBlue #STTOKE
+STTOKE 8oz Blossom Pink #STTOKE #BlossomPink
 
 ## 🔥 Hook / Script
-Durable? Dropped mine 3 times. Still perfect. 😤
+Which limited edition should we restock? 🗳️
 
 ## 📝 Caption
-The cup everyone's talking about ☕🔥
+Zero waste. All style. 🌿
 
-STTOKE 12oz Bondi Blue — Shop: shopee.com.my/mugged_nick
+STTOKE 8oz Blossom Pink — Shop: shopee.com.my/mugged_nick
 
-#sttokemy #montigomy #reusablecups
+#sustainableliving #zerowaste #malaysia
 
 ## 🏷️ Hashtags
-#STTOKE #MONTIGO #reusablecup #ecofriendly #zerowaste #shopeeMY #malaysiaseller
+#reusablebottle #sustainable #bpanfree #coffeelover #muggednick
 
 ## 🔗 Links
 - Shopee: https://shopee.com.my/mugged_nick
