@@ -70,8 +70,10 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            background: #ffffff;
-            border-bottom: 1px solid var(--border);
+            background: rgba(20,20,20,0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
         }
         nav .container {
             display: flex;
@@ -84,7 +86,7 @@
             align-items: center;
             gap: 10px;
             text-decoration: none;
-            color: var(--text);
+            color: #ffffff;
             font-weight: 900;
             font-size: 14px;
             letter-spacing: 1px;
@@ -93,11 +95,11 @@
         .logo-icon {
             width: 36px;
             height: 36px;
-            background: var(--text);
+            background: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: var(--text);
             font-size: 16px;
         }
         .nav-links {
@@ -108,7 +110,7 @@
         }
         .nav-links a {
             text-decoration: none;
-            color: var(--text-secondary);
+            color: rgba(255,255,255,0.55);
             font-size: 13px;
             font-weight: 500;
             text-transform: uppercase;
@@ -117,51 +119,65 @@
         }
         .nav-links a:hover { color: var(--bmw-blue); }
         .nav-links .nav-btn {
-            background: var(--text);
+            background: var(--bmw-blue);
             color: #ffffff;
             padding: 10px 24px;
             font-weight: 700;
             letter-spacing: 0.5px;
             border-radius: 0;
         }
-        .nav-links .nav-btn:hover { background: var(--bmw-dark); color: #ffffff; }
+        .nav-links .nav-btn:hover { background: #ffffff; color: var(--text); }
 
         /* ── HERO ── */
         .hero {
             background: var(--bmw-dark);
             color: #ffffff;
-            padding: 100px 0 80px;
+            min-height: 90vh;
             position: relative;
             overflow: hidden;
+            display: flex;
+            align-items: center;
         }
-        .hero::before {
-            content: '';
+        .hero-bg {
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(28,105,212,0.08) 0%, transparent 50%);
+            background: 
+                radial-gradient(ellipse 80% 60% at 50% 50%, rgba(28,105,212,0.06) 0%, transparent 70%),
+                radial-gradient(ellipse 60% 50% at 70% 30%, rgba(255,255,255,0.02) 0%, transparent 60%);
             pointer-events: none;
         }
-        .hero .container { position: relative; }
-        .hero h1 {
-            font-size: 56px;
+        .hero .container {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            min-height: 70vh;
+        }
+        .hero-text {
+            padding: 80px 0;
+        }
+        .hero-text h1 {
+            font-size: 52px;
             font-weight: 300;
             text-transform: uppercase;
-            line-height: 1.15;
+            line-height: 1.1;
             letter-spacing: -1px;
-            max-width: 720px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
-        .hero h1 span {
+        .hero-text h1 span {
             font-weight: 700;
             color: var(--bmw-blue);
         }
-        .hero p {
-            font-size: 15px;
+        .hero-text p {
+            font-size: 14px;
             font-weight: 400;
-            color: rgba(255,255,255,0.55);
-            max-width: 520px;
-            line-height: 1.6;
-            margin-bottom: 40px;
+            color: rgba(255,255,255,0.5);
+            max-width: 440px;
+            line-height: 1.7;
+            margin-bottom: 36px;
         }
         .hero-actions {
             display: flex;
@@ -200,14 +216,13 @@
 
         .hero-stats {
             display: flex;
-            gap: 56px;
-            margin-top: 56px;
-            padding-top: 40px;
-            border-top: 1px solid rgba(255,255,255,0.08);
+            gap: 48px;
+            margin-top: 48px;
+            padding-top: 36px;
+            border-top: 1px solid rgba(255,255,255,0.06);
         }
-        .stat { }
         .stat-num {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 300;
             color: #ffffff;
             letter-spacing: -0.5px;
@@ -219,6 +234,46 @@
             letter-spacing: 1.5px;
             color: rgba(255,255,255,0.35);
             margin-top: 4px;
+        }
+
+        /* ── HERO VISUAL ── */
+        .hero-visual {
+            position: relative;
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-showcase {
+            position: relative;
+            width: 420px;
+            height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-showcase svg {
+            width: 100%;
+            height: 100%;
+        }
+        .hero-glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(28,105,212,0.15) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+        .hero-stripe {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(28,105,212,0.5), transparent);
         }
 
         /* ── SECTIONS ── */
@@ -434,9 +489,13 @@
 
         /* ── RESPONSIVE ── */
         @media (max-width: 768px) {
-            .hero { padding: 60px 0 48px; }
-            .hero h1 { font-size: 30px; }
+            .hero { padding: 40px 0; min-height: auto; }
+            .hero .container { grid-template-columns: 1fr; gap: 0; min-height: auto; }
+            .hero-text { padding: 40px 0; }
+            .hero-text h1 { font-size: 30px; }
             .hero-stats { gap: 28px; flex-wrap: wrap; }
+            .hero-visual { min-height: 300px; }
+            .product-showcase { width: 300px; height: 300px; }
             .features-grid { grid-template-columns: 1fr 1fr; }
             .brands-grid { grid-template-columns: 1fr; }
             .brand-card { padding: 36px 28px; }
@@ -473,26 +532,128 @@
 </nav>
 
 <section class="hero">
+    <div class="hero-bg"></div>
     <div class="container">
-        <h1>Premium Reusable<br>Drinkware <span>Malaysia</span></h1>
-        <p>Authorised seller of STTOKE ceramic tumblers and MONTIGO stainless steel bottles. 100% genuine products, free shipping nationwide.</p>
-        <div class="hero-actions">
-            <a href="https://shopee.com.my/mugged_nick" class="btn btn-primary" target="_blank" rel="noopener">Shop on Shopee →</a>
-            <a href="#brands" class="btn btn-secondary">Explore →</a>
+        <div class="hero-text">
+            <h1>Premium Reusable<br>Drinkware <span>Malaysia</span></h1>
+            <p>Authorised seller of STTOKE ceramic tumblers and MONTIGO stainless steel bottles. 100% genuine products, free shipping nationwide.</p>
+            <div class="hero-actions">
+                <a href="https://shopee.com.my/mugged_nick" class="btn btn-primary" target="_blank" rel="noopener">Shop on Shopee →</a>
+                <a href="#brands" class="btn btn-secondary">Explore →</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-num">★ 4.98</div>
+                    <div class="stat-label">Average Rating</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">3,958</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">Selangor</div>
+                    <div class="stat-label">Based in Malaysia</div>
+                </div>
+            </div>
         </div>
-        <div class="hero-stats">
-            <div class="stat">
-                <div class="stat-num">★ 4.98</div>
-                <div class="stat-label">Average Rating</div>
+        <div class="hero-visual">
+            <div class="hero-glow"></div>
+            <div class="product-showcase">
+                <svg viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Ambient light reflection -->
+                    <defs>
+                        <linearGradient id="bodyGrad1" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#2a2a2a"/>
+                            <stop offset="50%" stop-color="#1a1a1a"/>
+                            <stop offset="100%" stop-color="#0d0d0d"/>
+                        </linearGradient>
+                        <linearGradient id="bodyGrad2" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#2e2e2e"/>
+                            <stop offset="40%" stop-color="#1c1c1c"/>
+                            <stop offset="100%" stop-color="#111111"/>
+                        </linearGradient>
+                        <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="rgba(255,255,255,0.08)"/>
+                            <stop offset="50%" stop-color="rgba(255,255,255,0)"/>
+                            <stop offset="100%" stop-color="rgba(255,255,255,0.03)"/>
+                        </linearGradient>
+                        <linearGradient id="lidGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#3a3a3a"/>
+                            <stop offset="100%" stop-color="#222222"/>
+                        </linearGradient>
+                        <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#1c69d4"/>
+                            <stop offset="50%" stop-color="#2a7df0"/>
+                            <stop offset="100%" stop-color="#1c69d4"/>
+                        </linearGradient>
+                        <!-- Shadow blur -->
+                        <filter id="shadowBlur">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="8"/>
+                        </filter>
+                        <filter id="softGlow">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+                        </filter>
+                    </defs>
+
+                    <!-- Floor reflection -->
+                    <ellipse cx="210" cy="390" rx="140" ry="12" fill="rgba(28,105,212,0.04)" filter="url(#shadowBlur)"/>
+                    <ellipse cx="210" cy="388" rx="80" ry="6" fill="rgba(255,255,255,0.03)" filter="url(#shadowBlur)"/>
+
+                    <!-- ====== STTOKE TUMBLER (left, slightly tilted) ====== -->
+                    <g transform="translate(-30, -10) rotate(-6, 210, 200)">
+                        <!-- Main body -->
+                        <rect x="165" y="140" width="90" height="230" rx="4" fill="url(#bodyGrad1)" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                        <!-- Body shine -->
+                        <rect x="165" y="140" width="90" height="230" rx="4" fill="url(#shine)"/>
+                        <!-- Highlight strip -->
+                        <rect x="171" y="145" width="12" height="220" rx="2" fill="rgba(255,255,255,0.04)"/>
+                        <!-- Ceramic line detail -->
+                        <rect x="165" y="320" width="90" height="3" fill="rgba(28,105,212,0.12)"/>
+                        <!-- Lid -->
+                        <rect x="160" y="125" width="100" height="20" rx="3" fill="url(#lidGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+                        <!-- Lid top highlight -->
+                        <rect x="163" y="126" width="94" height="4" rx="1" fill="rgba(255,255,255,0.06)"/>
+                        <!-- Lid cap -->
+                        <rect x="182" y="118" width="56" height="12" rx="2" fill="#333" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                        <!-- Brand band -->
+                        <rect x="165" y="280" width="90" height="24" fill="url(#band)" rx="0"/>
+                        <!-- Brand text on band -->
+                        <text x="210" y="296" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="9" font-weight="600" font-family="DM Sans, sans-serif" letter-spacing="3">STTOKE</text>
+                        <!-- Bottom ring -->
+                        <rect x="163" y="362" width="94" height="8" rx="2" fill="#1a1a1a" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+                    </g>
+
+                    <!-- ====== MONTIGO BOTTLE (right, upright) ====== -->
+                    <g transform="translate(60, 10)">
+                        <!-- Main body -->
+                        <rect x="155" y="110" width="70" height="270" rx="6" fill="url(#bodyGrad2)" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                        <!-- Body shine -->
+                        <rect x="155" y="110" width="70" height="270" rx="6" fill="url(#shine)"/>
+                        <!-- Highlight strip -->
+                        <rect x="160" y="115" width="10" height="260" rx="2" fill="rgba(255,255,255,0.04)"/>
+                        <!-- Neck transition -->
+                        <rect x="155" y="110" width="70" height="50" rx="6" fill="#222" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+                        <rect x="155" y="110" width="70" height="50" rx="6" fill="url(#shine)"/>
+                        <!-- Neck -->
+                        <rect x="172" y="65" width="36" height="55" rx="2" fill="#2a2a2a" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+                        <!-- Thread detail -->
+                        <rect x="172" y="105" width="36" height="4" fill="rgba(255,255,255,0.04)"/>
+                        <rect x="172" y="112" width="36" height="4" fill="rgba(255,255,255,0.04)"/>
+                        <!-- Cap -->
+                        <rect x="168" y="50" width="44" height="20" rx="3" fill="#333" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+                        <rect x="170" y="52" width="40" height="4" rx="1" fill="rgba(255,255,255,0.06)"/>
+                        <!-- Brand etched -->
+                        <text x="190" y="250" text-anchor="middle" fill="rgba(255,255,255,0.08)" font-size="11" font-weight="400" font-family="DM Sans, sans-serif" letter-spacing="2" transform="rotate(-90, 190, 250)">MONTIGO</text>
+                        <!-- Bottom ring -->
+                        <rect x="153" y="374" width="74" height="6" rx="2" fill="#1a1a1a" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+                    </g>
+
+                    <!-- Accent dot -->
+                    <circle cx="280" cy="150" r="3" fill="rgba(28,105,212,0.2)" filter="url(#softGlow)"/>
+                    <circle cx="140" cy="180" r="2" fill="rgba(28,105,212,0.15)" filter="url(#softGlow)"/>
+                </svg>
             </div>
-            <div class="stat">
-                <div class="stat-num">3,958</div>
-                <div class="stat-label">Happy Customers</div>
-            </div>
-            <div class="stat">
-                <div class="stat-num">Selangor</div>
-                <div class="stat-label">Based in Malaysia</div>
-            </div>
+            <div class="hero-stripe"></div>
         </div>
     </div>
 </section>
