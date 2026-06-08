@@ -1,27 +1,27 @@
 # 📱 mugged_nick — Today's Social Post
-**2026-06-07 Sunday**
+**2026-06-08 Monday**
 
 ## 🎯 Theme
-Sunday Reset — prep your week with style ✨
+Monday Motivation — start the week plastic-free ♻️
 
 ## 📹 Format
-CAROUSEL
+REEL
 
 ## 🏷️ Product
-STTOKE 8oz Blossom Pink #STTOKE #BlossomPink
+MONTIGO Sense Marigold #Montigo #Marigold
 
 ## 🔥 Hook / Script
-Which limited edition should we restock? 🗳️
+MONTIGO vs Hydro Flask — same quality, half the price 💸
 
 ## 📝 Caption
-Zero waste. All style. 🌿
+Made the switch to reusable and never going back ♻️✨
 
-STTOKE 8oz Blossom Pink — Shop: shopee.com.my/mugged_nick
+MONTIGO Sense Marigold — Shop: shopee.com.my/mugged_nick
 
-#sustainableliving #zerowaste #malaysia
+#ecofriendly #reusablecup
 
 ## 🏷️ Hashtags
-#reusablebottle #sustainable #bpanfree #coffeelover #muggednick
+#STTOKEMalaysia #MontigoMY #reusabletumbler #ecogift #corporategift
 
 ## 🔗 Links
 - Shopee: https://shopee.com.my/mugged_nick
