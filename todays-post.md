@@ -1,28 +1,14 @@
-# 📱 mugged_nick — Today's Social Post
-**2026-06-08 Monday**
-
-## 🎯 Theme
-Monday Motivation — start the week plastic-free ♻️
-
-## 📹 Format
-REEL
-
-## 🏷️ Product
-MONTIGO Sense Marigold #Montigo #Marigold
-
-## 🔥 Hook / Script
-MONTIGO vs Hydro Flask — same quality, half the price 💸
+# 📱 mugged_nick — Today's Post
+**2026-06-09 Tuesday** | Product Spotlight
+**Product:** STTOKE Lilac Dream
+**Charcount:** 47/250
 
 ## 📝 Caption
-Made the switch to reusable and never going back ♻️✨
+Your desk setup needs this ✨ STTOKE Lilac Dream
 
-MONTIGO Sense Marigold — Shop: shopee.com.my/mugged_nick
+shopee.com.my/mugged_nick
 
-#ecofriendly #reusablecup
-
-## 🏷️ Hashtags
-#STTOKEMalaysia #MontigoMY #reusabletumbler #ecogift #corporategift
-
+#STTOKE #MONTIGO #reusablecup #muggednick
 ## 🔗 Links
 - Shopee: https://shopee.com.my/mugged_nick
 - Lazada: https://www.lazada.com.my/shop/mugged
