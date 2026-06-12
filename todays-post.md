@@ -1,10 +1,10 @@
 # 📱 mugged_nick — Today's Post
-**2026-06-10 Wednesday** | Wellness Wednesday
-**Product:** STTOKE 20oz Straw Cup
-**Charcount:** 59/250
+**2026-06-12 Friday** | Flashback Friday
+**Product:** MONTIGO Disney Pooh Cup
+**Charcount:** 53/250
 
 ## 📝 Caption
-Gift for your coffee-obsessed friend🎁 STTOKE 20oz Straw Cup
+Kopitiam carry test. It fits✅ MONTIGO Disney Pooh Cup
 
 shopee.com.my/mugged_nick
 
